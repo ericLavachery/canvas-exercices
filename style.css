@@ -1,0 +1,8 @@
+canvas{
+    margin: 20px;
+}
+.kanvas{
+    margin: 20px;
+    border:1px solid #ede9ad;
+    display: inline-block;
+}
