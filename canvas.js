@@ -62,7 +62,6 @@ ctx.fill();
 ctx.stroke();
 ctx.closePath();
 
-
 // pt fenêtre étage
 ctx.beginPath();
 ctx.moveTo(65, 150);
@@ -83,5 +82,25 @@ ctx.lineTo(120, 195);
 ctx.lineTo(65, 195);
 ctx.fillStyle = '#a1d7d1';
 ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+// TEST ENTRE DEUX PIXELS
+
+var c = document.getElementById("testPixels");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(0, 0);
+ctx.lineTo(6, 0);
+ctx.lineTo(6, 6);
+ctx.lineTo(0, 6);
+ctx.lineTo(0, 0);
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(3, 0);
+ctx.lineTo(3, 6);
 ctx.stroke();
 ctx.closePath();
