@@ -73,18 +73,6 @@ ctx.fillStyle = '#a1d7d1';
 ctx.fill();
 ctx.stroke();
 ctx.closePath();
-// ctx.beginPath();
-// ctx.moveTo(150, 230);
-// ctx.lineTo(235, 230);
-// ctx.lineTo(235, 275);
-// ctx.lineTo(150, 275);
-// ctx.lineTo(150, 230);
-// ctx.moveTo(193, 230);
-// ctx.lineTo(193, 275);
-// ctx.fillStyle = '#a1d7d1';
-// ctx.fill();
-// ctx.stroke();
-// ctx.closePath();
 
 // grd fenêtre étage
 ctx.beginPath();
@@ -125,18 +113,6 @@ ctx.fillStyle = '#a1d7d1';
 ctx.fill();
 ctx.stroke();
 ctx.closePath();
-// ctx.beginPath();
-// ctx.moveTo(150, 150);
-// ctx.lineTo(235, 150);
-// ctx.lineTo(235, 195);
-// ctx.lineTo(150, 195);
-// ctx.lineTo(150, 150);
-// ctx.moveTo(193, 150);
-// ctx.lineTo(193, 195);
-// ctx.fillStyle = '#a1d7d1';
-// ctx.fill();
-// ctx.stroke();
-// ctx.closePath();
 
 // pt fenêtre étage
 ctx.beginPath();
@@ -149,8 +125,6 @@ ctx.fillStyle = '#d1f0ec';
 ctx.fill();
 ctx.stroke();
 ctx.closePath();
-
-// reflets pt fenêtre étage
 ctx.beginPath();
 ctx.moveTo(65, 195);
 ctx.lineTo(115, 160);
@@ -160,9 +134,6 @@ ctx.fillStyle = '#a1d7d1';
 ctx.fill();
 ctx.stroke();
 ctx.closePath();
-
-
-
 
 
 // TEST ENTRE DEUX PIXELS
@@ -182,5 +153,30 @@ ctx.closePath();
 ctx.beginPath();
 ctx.moveTo(3, 0);
 ctx.lineTo(3, 6);
+ctx.stroke();
+ctx.closePath();
+
+
+// DEAD KENNEDY'S
+
+var c = document.getElementById("dk");
+var ctx = c.getContext("2d");
+var centerX = c.width/2+4;
+var centerY = c.height/2+5;
+
+var radius = 328;
+ctx.beginPath();
+ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+ctx.fillStyle = '#141414';
+ctx.fill();
+ctx.closePath();
+
+var radius = 231;
+ctx.beginPath();
+ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+ctx.fillStyle = 'red';
+ctx.fill();
+ctx.lineWidth = 5;
+ctx.strokeStyle = '#000000';
 ctx.stroke();
 ctx.closePath();

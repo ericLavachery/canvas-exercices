@@ -1,8 +1,14 @@
 canvas{
     margin: 20px;
+    opacity: 1.0;
 }
 .kanvas{
     margin: 20px;
     border:1px solid #ede9ad;
     display: inline-block;
+}
+#dkwrap{
+    background-image: url(img/dk_logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
